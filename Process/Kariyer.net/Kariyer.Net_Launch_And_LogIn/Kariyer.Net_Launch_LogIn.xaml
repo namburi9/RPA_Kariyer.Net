@@ -1,0 +1,411 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Kariyer_Net_Launch_LogIn" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1064,3570.6666666666665" sap2010:WorkflowViewState.IdRef="Kariyer_Net_Launch_LogIn_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Kariyer_Net_Launch_LogIn" sap:VirtualizedContainerService.HintSize="1074,3506" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="bool_Already_LogIn" />
+      <Variable x:TypeArguments="x:Boolean" Name="bool_LogInScreen_Available" />
+      <Variable x:TypeArguments="x:Boolean" Name="bool_MobileConfirmation" />
+      <Variable x:TypeArguments="x:Boolean" Name="bool_ImageConfiguration" />
+      <Variable x:TypeArguments="x:Boolean" Name="bool_OTP_Configuration" />
+      <Variable x:TypeArguments="x:Boolean" Name="bool_ElementExists" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Launch" sap:VirtualizedContainerService.HintSize="1012,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process\Kariyer.net\Kariyer.Net_Launch_And_LogIn\KarierPortal_Launch.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="In_KariyerUrl">https://www.kariyer.net/isveren/giris/</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="In_Timeout">2000</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="In_RetryNo">3</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="In_RetryFreq">00:00:02</InArgument>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="out_bool_Already_LogIn" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Kariyer.Net_Multi_Launch_HealthChecks.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1012,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Process\Kariyer.net\Kariyer.Net_Launch_And_LogIn\Kariyer.Net_Multi_Launch_HealthChecks.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InOutArgument x:TypeArguments="x:Boolean" x:Key="out_bool_Already_LogIn">[bool_Already_LogIn]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Boolean" x:Key="out_bool_LogIn_Screen">[bool_LogInScreen_Available]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Boolean" x:Key="out_bool_Mobile_Confirmaiton">[bool_MobileConfirmation]</InOutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_str_retry">3</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_str_Time_Span">00:00:05</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_str_TimeOut">3000</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1012,2929.3333333333335" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+      <ui:IfElseIf.ConditionBlocks>
+        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+          <ui:IfElseIfBlock BlockType="If" Condition="[bool_Already_LogIn]">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,255.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message - Kariyer.Net application already logged in" sap:VirtualizedContainerService.HintSize="388,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Kariyer.Net application already logged in&quot;]" />
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[bool_LogInScreen_Available]">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="960.6666666666666,2343.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LogIn Health Checks" sap:VirtualizedContainerService.HintSize="898.6666666666666,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Process\Kariyer.net\Kariyer.Net_Launch_And_LogIn\karierPortal_Login.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_Str_Username" />
+                    <InArgument x:TypeArguments="x:String" x:Key="in_str_Delay_Medium">30000</InArgument>
+                    <InArgument x:TypeArguments="ss:SecureString" x:Key="In_str_Password" />
+                    <InArgument x:TypeArguments="x:String" x:Key="In_RetryNo">3</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_Timeout">30000</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_ScreenshotPath" />
+                  </ui:InvokeWorkflowFile.Arguments>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:InvokeWorkflowFile>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LogIn Health Check" sap:VirtualizedContainerService.HintSize="898.6666666666666,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Process\Kariyer.net\Kariyer.Net_Launch_And_LogIn\Kariyer.Net_Multi_LogIn_HealthChecks.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_str_retry">3</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_str_Time_Span">00:00:05</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_str_TimeOut">30000</InArgument>
+                    <InOutArgument x:TypeArguments="x:Boolean" x:Key="out_bool_Image_Configuration_LogIn">[bool_ImageConfiguration]</InOutArgument>
+                    <InOutArgument x:TypeArguments="x:Boolean" x:Key="out_bool_OTP_Screen">[bool_OTP_Configuration]</InOutArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:InvokeWorkflowFile>
+                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="898.6666666666666,1922" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                  <ui:IfElseIf.ConditionBlocks>
+                    <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                      <ui:IfElseIfBlock BlockType="If" Condition="[bool_ImageConfiguration]">
+                        <ui:IfElseIfBlock.Then>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="650,1720.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="588,1150.6666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:05">
+                              <ui:RetryScope.ActivityBody>
+                                <ActivityAction>
+                                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="546,866.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Kariyer.net 360 Employer Login" sap:VirtualizedContainerService.HintSize="484,662" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="504817dd-3c0a-4c16-bd02-9f1a88a061d3" Version="V2">
+                                      <uix:NApplicationCard.Body>
+                                        <ActivityAction x:TypeArguments="x:Object">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,442.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                              <ui:CommentOut.Body>
+                                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="548.6666666666666,449.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NDragAndDrop CursorMotionType="Smooth" DelayBetweenActions="0.3" DestinationScopeIdentifier="504817dd-3c0a-4c16-bd02-9f1a88a061d3" DisplayName="Drag and Drop 'DIV'" sap:VirtualizedContainerService.HintSize="486.6666666666667,54" sap2010:WorkflowViewState.IdRef="NDragAndDrop_1" ScopeIdentifier="504817dd-3c0a-4c16-bd02-9f1a88a061d3" Version="V3">
+                                                    <uix:NDragAndDrop.DestinationTarget>
+                                                      <uix:TargetAnchorable BrowserURL="https://www.kariyer.net/isveren/giris/" CvTextArea="1103, 842, 81, 21" CvTextArgument="GEETEST" CvType="Text" DesignTimeRectangle="1076, 840, 108, 24" DesignTimeScaleFactor="1.5" FriendlyName="'A https://www.geetest.c…'" FullSelectorArgument="&lt;webctrl aria-label='Geetest' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Geetest' tag='A' type='' class='geetest_box_logo_14cc88d0 geetest_box_logo' aaname='' /&gt;" Guid="31f59c65-f6ec-4f63-9c6e-27112e304185" ImageBase64="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" InformativeScreenshot="4c90045bfc9bcc6423252c028aa72fbb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kariyer.net 360 İşveren Girişi' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="732, 748, 453, 27" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='geetest_track_14cc88d0 geetest_track' tag='DIV' aaname='' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NDragAndDrop.DestinationTarget>
+                                                    <uix:NDragAndDrop.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://www.kariyer.net/isveren/giris/" CvElementArea="729, 722, 126, 85" CvType="Button" DesignTimeRectangle="732, 726, 121, 76" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl tag='DIV' class='geetest_btn*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='geetest_btn*' type='' aaname='' /&gt;" Guid="79485d2b-28cc-49f0-98b0-c4606471fcb7" ImageBase64="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" InformativeScreenshot="47923daa9641f56de63e148311a7ede4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kariyer.net 360*' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target CvElementArea="731, 833, 41, 41" CvTextArea="741, 845, 19, 18" CvTextArgument="X" CvType="AnyIcon" DesignTimeRectangle="731, 832, 41, 41" ElementType="Icon" FriendlyName="'X'" ImageBase64="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" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NDragAndDrop.Target>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </uix:NDragAndDrop>
+                                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,244.66666666666666" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                                    <ui:CommentOut.Body>
+                                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,164.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <uix:NDragAndDrop CursorMotionType="Smooth" DelayBetweenActions="0.3" DestinationScopeIdentifier="504817dd-3c0a-4c16-bd02-9f1a88a061d3" DisplayName="Drag and Drop 'DIV'" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="NDragAndDrop_2" ScopeIdentifier="504817dd-3c0a-4c16-bd02-9f1a88a061d3" Version="V3">
+                                                          <uix:NDragAndDrop.DestinationTarget>
+                                                            <uix:TargetAnchorable BrowserURL="https://www.kariyer.net/isveren/giris/" CvTextArea="1103, 842, 81, 21" CvTextArgument="GEETEST" CvType="Text" DesignTimeRectangle="1076, 840, 108, 24" DesignTimeScaleFactor="1.5" FriendlyName="'A https://www.geetest.c…'" FullSelectorArgument="&lt;webctrl aria-label='Geetest' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Geetest' tag='A' type='' class='geetest_box_logo_14cc88d0 geetest_box_logo' aaname='' /&gt;" Guid="31f59c65-f6ec-4f63-9c6e-27112e304185" ImageBase64="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" InformativeScreenshot="4c90045bfc9bcc6423252c028aa72fbb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kariyer.net 360 İşveren Girişi' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                  <uix:Target DesignTimeRectangle="732, 748, 453, 27" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='geetest_track_14cc88d0 geetest_track' tag='DIV' aaname='' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NDragAndDrop.DestinationTarget>
+                                                          <uix:NDragAndDrop.Target>
+                                                            <uix:TargetAnchorable BrowserURL="https://www.kariyer.net/isveren/giris/" CvElementArea="729, 722, 126, 85" CvType="Button" DesignTimeRectangle="732, 726, 121, 76" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl tag='DIV' class='geetest_btn*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='geetest_btn*' type='' aaname='' /&gt;" Guid="79485d2b-28cc-49f0-98b0-c4606471fcb7" ImageBase64="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" InformativeScreenshot="47923daa9641f56de63e148311a7ede4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kariyer.net 360*' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                  <uix:Target CvElementArea="731, 833, 41, 41" CvTextArea="741, 845, 19, 18" CvTextArgument="X" CvType="AnyIcon" DesignTimeRectangle="731, 832, 41, 41" ElementType="Icon" FriendlyName="'X'" ImageBase64="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" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NDragAndDrop.Target>
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </uix:NDragAndDrop>
+                                                      </Sequence>
+                                                    </ui:CommentOut.Body>
+                                                  </ui:CommentOut>
+                                                </Sequence>
+                                              </ui:CommentOut.Body>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:CommentOut>
+                                            <uix:NDragAndDrop CursorMotionType="Smooth" DelayBetweenActions="0.3" DestinationScopeIdentifier="504817dd-3c0a-4c16-bd02-9f1a88a061d3" DisplayName="Drag and Drop 'DIV'" sap:VirtualizedContainerService.HintSize="388,232.66666666666666" sap2010:WorkflowViewState.IdRef="NDragAndDrop_3" ScopeIdentifier="504817dd-3c0a-4c16-bd02-9f1a88a061d3" Version="V3">
+                                              <uix:NDragAndDrop.DestinationTarget>
+                                                <uix:TargetAnchorable BrowserURL="https://www.kariyer.net/isveren/giris/" CvTextArea="1103, 833, 81, 21" CvTextArgument="GEETEST" CvType="Text" DesignTimeRectangle="1076, 840, 108, 24" DesignTimeScaleFactor="1.5" FriendlyName="'A https://www.geetest.c…'" FullSelectorArgument="&lt;webctrl aria-label='geetest*' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='geetest' tag='A' type='' class='geetest_box_logo_91fc13ab geetest_box_logo' aaname='' /&gt;" Guid="47833bee-e1b3-40e3-bdb6-239a66c66ffc" ImageBase64="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" InformativeScreenshot="e7ea3529610825da12493c2d3c508879.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kariyer.net 360*' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset Position="TopLeft" X="-7" Y="-57" />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NDragAndDrop.DestinationTarget>
+                                              <uix:NDragAndDrop.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://www.kariyer.net/isveren/giris/" CvElementArea="729, 712, 127, 86" CvType="Button" DesignTimeRectangle="732, 726, 121, 76" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl tag='DIV' class='geetest_btn_* geetest_btn' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='geetest_btn_* geetest_btn' type='' aaname='' /&gt;" Guid="976d2856-90ee-4fe8-baa3-aafcb2a1d640" ImageBase64="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" InformativeScreenshot="1e0dea578f89f6225657604ca135e9f7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kariyer.net 360*' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                              </uix:NDragAndDrop.Target>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NDragAndDrop>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </uix:NApplicationCard.Body>
+                                      <uix:NApplicationCard.TargetApp>
+                                        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACFlBMVEWDFrSCFLOSMr3q1/L38Pr27vnlzu+PLLuTNL7x5ff////s3PSPLruPLbuCE7OCFLSBE7OCFbSWOb+7gNbDj9vDjtu0cdGMKLqDFbSXPcHjyu7+/v/8+v3CjdqEF7TewOvWsuaGHLaNKbrVseb//v/38fqvac+JIrjNoeH9/P769fy8gteFGrWHHbbEkdv8+f3FkdyEGbW8gdb+/P6zcdGrYczz6fijUsfu3/XkzO+XPMCcRMPo1PGeSMTiye7v4fakVciBErOQL7zbvOn06visZM2LJbnTrOT48fu1dNKDF7Tr2/OVOL/Jmt79+/769vy9g9eFGbXv4fXOo+HGk9yHHbf9+v7+/f6KI7jWs+aOK7vewuuSM72YPsHq2PKeScXw4valV8n06/muZs66fdXImN6IH7f7+P359fy2dtP17fmwa8/y5/eqX8yCFbPu4PWkVMj17Pno0/GfSsXr2vOkU8jiyO3m0PCaQsLn0vGWOsCgTcbdv+qmWMnXtOf06fjRqOOMJrmzcNH37/rLnd+EGLW5fNX58/vFktyHHreGG7XAiNn69/y/h9iGGrXGlN25e9XNoOGNKLqtZc2QLrzauejw4/anWcqUNr7fxOyhT8bkze+cRsOQLrudR8To1fGRMLzt3vSOKrqiUcft3fTz6PiXO8D48/v48vu+hNenWsrp1/L27/qcRsSjU8iUNb6jUceeScT+D6wUAAAC9klEQVRoQ+2Y51sTMRjAL6WCXuFoUeRUEIEqQ2sFt+BAQXGBigqCIKKi4kaKuJUhgnvvPXCP/9DKvU3q5UaTK1988vuUvO8lvyeX8eROMga5EtxjCO7EJASZOIHGjpOj8SSPtiBFCHQIgS1CYIsQ2CIEtgiBLUJgy/8uQErqP3h9kIgdSwFKGz8hPZqJGSqkYsZKoEyaPAXCQGbWVMjFjIUAubIhSJiWA8mYMReg3Dw/BDHTZ6RCNmZMBb78gkKIYYpmztKSDJgJfIHZQQhhgnMCcVtFanFJEUQwcwvy2fs3HcE8NwQw/rzcyPSwYCxInb8A6oRsF0//xgK0cBFUCYuXeKEJG0YCpbQMaoSEpQq0YMRAoKQtgwph+Qqu9xOGEiSXr1wFZUJFJcf60aAESavX6A4gWa5auw4eZ0cvWL9hYzUUMTWbNjMfohi9YEttDZQwmVu3cb8gWlC4HQqYutp6B/1TAgr/jgbeBTSCraBxp6P+bQWJTXwbGGMjaN7FuYEx1oKW3c7eTxhLQeseJ+tHw0oQ3AsPOcFKULivbXRHIO/PynFssJ7kAyUOTiENa4FcdZD5KqfDRiC3H4IHebETyIePHIVH+bAVyMeOx/WwO9FBXUibTzo5LvSCzlAXlAinuh0ceHqBp6H7NBQJXWf4x0AJksvPdkKZcI7vVvcXSpCC0PkWqGD8F7j/mRsIJF/lRahh6i5dZv700DASSFJPL1Qx1X08d/cwhgK1/8oA1DHBq4Ncx5LxCNSha9chgKm5cZPHYCyQ1MFb1BfUwO1+DoOJQPLV36G+AXt7RlJsmAkkdJe+BFfcY59oU4GE7j+AGOHho0g2ZswFEnr8BIIEz1NWg4VA8jY9gyih7DmjgRK8iOpAefkKwoTGDLZ5QK/fQEuNjrfRRwJ69x7imA8fGYcwlN4+/CnCcOvnYohr+L58Jdkww9/62hg3g9r2/UcIUxrQN//5KyodCv3OZ95sqjcKhWqOIBOBYzMLBAKBQCDASNIfUV+8eNPrh/AAAAAASUVORK5CYII=" InformativeScreenshot="8ca9a96652f474c30efc6c69f36b3606.jpg" Selector="&lt;html app='chrome.exe' title='Kariyer.net 360 Employer Login' /&gt;" Title="Kariyer.net 360 Employer Login" Url="https://www.kariyer.net/isveren/giris/" />
+                                      </uix:NApplicationCard.TargetApp>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NApplicationCard>
+                                    <ui:UiElementExists DisplayName="Element Exists 'A  https://www.geetest....'" Exists="[bool_ElementExists]" sap:VirtualizedContainerService.HintSize="484,54" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                                      <ui:UiElementExists.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="58140ee9-f430-4909-83f4-ee18089b3996" InformativeScreenshot="cc1cb1a4e7eb32633465d6d60b5dcbd8" Selector="&lt;html app='chrome.exe' title='Kariyer.net 360*' /&gt;&lt;webctrl aria-label='geetest' tag='A' class='geetest_box_logo_*' /&gt;" TimeoutMS="30000" WaitForReady="COMPLETE" />
+                                      </ui:UiElementExists.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:UiElementExists>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:RetryScope.ActivityBody>
+                              <ui:RetryScope.Condition>
+                                <ActivityFunc x:TypeArguments="x:Boolean">
+                                  <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[bool_ElementExists]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+                                </ActivityFunc>
+                              </ui:RetryScope.Condition>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:RetryScope>
+                            <If Condition="[bool_ElementExists=False]" sap:VirtualizedContainerService.HintSize="588,419.3333333333333" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="300,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="258,54" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;Failed to login kariyer.Net Application, Failed at validating captcha&quot;]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                  <Throw Exception="[new System.Exception(&quot;Failed to login kariyer.Net Application, Failed at validating captcha&quot;)]" sap:VirtualizedContainerService.HintSize="258,54" sap2010:WorkflowViewState.IdRef="Throw_1">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Throw>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_10" />
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ui:IfElseIfBlock.Then>
+                      </ui:IfElseIfBlock>
+                    </sc:BindingList>
+                  </ui:IfElseIf.ConditionBlocks>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:IfElseIf>
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+        </sc:BindingList>
+      </ui:IfElseIf.ConditionBlocks>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:IfElseIf>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Kariyer.net\Kariyer.Net_Launch_And_LogIn\Kariyer.Net_Confirm_Later.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1012,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Process\Kariyer.net\Kariyer.Net_Launch_And_LogIn\Kariyer.Net_Confirm_Later.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>
